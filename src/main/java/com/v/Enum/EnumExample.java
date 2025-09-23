@@ -31,6 +31,11 @@ public class EnumExample {
         }
 
 
+        System.out.println("begin,");
+        OnlyOne firstCall = OnlyOne.ONCE; // Prints constructing,
+        OnlyOne secondCall = OnlyOne.ONCE; // Doesn't print anything
+        System.out.println("end");
+
 
     }
 }
