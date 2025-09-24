@@ -1,4 +1,4 @@
-package com.v.Utility;
+package com.v.Sealed;
 
 sealed interface Shape permits Circle, Rectangle {
     void draw();
@@ -48,9 +48,18 @@ public class SealedExample {
         Shape s=new Rectangle();
         render(s);
 
+        Language java=new Java();
+
+        switch(java){
+            default -> System.out.println("aknvd");
+        }
+
     }
 
 
 }
+interface Language {}
 
+class Java implements Language{}
+class Python implements Language{}
 

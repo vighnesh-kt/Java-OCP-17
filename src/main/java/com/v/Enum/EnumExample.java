@@ -7,6 +7,8 @@ public class EnumExample {
     public static void main(String[] args) {
         var win= Season.WINTER;
         var som=Season.valueOf("SUMMER");
+        System.out.println(som);
+        System.out.println(som.ordinal());
 
         Season[] values = Season.values();
 
@@ -35,6 +37,8 @@ public class EnumExample {
         OnlyOne firstCall = OnlyOne.ONCE; // Prints constructing,
         OnlyOne secondCall = OnlyOne.ONCE; // Doesn't print anything
         System.out.println("end");
+
+
 
 
     }

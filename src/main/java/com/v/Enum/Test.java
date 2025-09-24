@@ -34,6 +34,6 @@ public class Test {
         System.out.println(OverloadEg.ERROR.getMessage());
         System.out.println(OverloadEg.UNKNOWN.getMessage());
 
-        System.out.println(City.GHATKOPAR.pincode());
+        System.out.println(City.pincode());
     }
 }

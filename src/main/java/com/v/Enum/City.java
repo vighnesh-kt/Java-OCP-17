@@ -5,15 +5,16 @@ public enum City {
     KURLA("400070"),
     GHATKOPAR("400084"); // Semicolon is present here
 
-    private final String pincode;
+    private final static String staticPincode="10";
+
+    String pincode;
 
     City(String pincode) {
         this.pincode=pincode;
     }
 
-    String pincode(){
-        return pincode;
+
+    static String pincode(){
+        return staticPincode;
     }
 }
-
-
